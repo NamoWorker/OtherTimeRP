@@ -2,6 +2,7 @@
 <html amp >
 <head>
 	<!-- Special -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 	<!-- End of Special -->
@@ -43,6 +44,13 @@ body{font-family: Roboto;}blockquote{border-color: #ffeb12;}div[submit-success] 
 	<div class="loader-container">
         <div class="loader"></div>
     </div>
+	
+	<script>
+        $(window).on("load",function(){
+            $(".loader-container").fadeOut(6000);
+        });
+    </script>
+	
 		<amp-sidebar id="sidebar" class="cid-s7lEGZhoEI" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
