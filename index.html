@@ -2,17 +2,8 @@
 <html amp >
 <head>
 	<!-- Special -->
-	
-	<div class="loader-wrapper-two">
-	<span class="loader"><span class="loader-inner"></span></span>
-	</div>
-	
-	<script>
-		$(window).on("load", function(){
-			$(".loader-wrapper-two").fadeOut("slow");
-		});
-	</script>
-	
+	<link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 	<!-- End of Special -->
 	
 	
@@ -48,7 +39,11 @@ body{font-family: Roboto;}blockquote{border-color: #ffeb12;}div[submit-success] 
   
   
 </head>
-<body><amp-sidebar id="sidebar" class="cid-s7lEGZhoEI" layout="nodisplay" side="right">
+<body>
+	<div class="loader-container">
+        <div class="loader"></div>
+    </div>
+		<amp-sidebar id="sidebar" class="cid-s7lEGZhoEI" layout="nodisplay" side="right">
         <div class="builder-sidebar" id="builder-sidebar">
             <button on="tap:sidebar.close" class="close-sidebar">
                 <span></span>
